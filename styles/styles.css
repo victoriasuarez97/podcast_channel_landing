@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-title: 'IBM Plex Sans', sans-serif;
+    --font-paragraph: 'IBM Plex Mono', monospace;
+    --text-color: '#060A24';
+    --color-button: '#00F3BB';
+    --title-font-size-mobile: '36px';
+    --title-font-size-desktop: '64px';
+    --p-font-size-mobile: '14px';
+    --p-font-size-desktop: '16px';
+}
