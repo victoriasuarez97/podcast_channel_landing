@@ -9,6 +9,8 @@
     --font-paragraph: 'IBM Plex Mono', monospace;
     --text-color: #060A24;
     --color-button: #00F3BB;
+    --bd-blue: #0000FE;
+    --bd-white: #ffffff;
     --title-font-size-mobile: 36px;
     --title-font-size-desktop: 64px;
     --p-font-size-mobile: 14px;
@@ -22,7 +24,6 @@ body {
 main {
     margin: auto;
     width: 320px;
-    padding: 15px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 
@@ -30,6 +31,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 15px;
 }
 
 #logo {
@@ -63,10 +65,25 @@ nav {
 
 .menu-list-mobile {
     display: none;
+    background-color: var(--bd-blue);
+    color: var(--bd-white);
+    font-family: var(--font-paragraph);
+    width: 320px;
+    text-align: left;
+    padding: 15px;
+    margin: 0px;
+    position: absolute;
+    top: 50px;
+    left: 685px;
+}
+
+.menu-list-mobile-item {
+    padding: 15px 0px;
+    cursor: pointer;
 }
 
 h1 {
-    margin: 40px 0px;
+    padding: 20px 15px;
     font-family: var(--font-title);
     font-size: var(--title-font-size-mobile);
     text-align: left;
@@ -82,12 +99,13 @@ p {
     text-align: left;
     font-size: var(--p-font-size-mobile);
     line-height: 22px;
+    padding: 0px 15px;
 }
 
 button {
     margin: 20px 0px;
     background-color: var(--color-button);
-    padding: 15px 95px;
+    padding: 15px 100px;
     font-size: var(--p-font-size-desktop);
     font-family: var(--font-paragraph);
     font-weight: bold;
@@ -97,5 +115,36 @@ button {
 
 button:hover {
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-    color: #ffffff;
+    color: var(--bd-white);
+}
+
+.polygon {
+    width: 320px;
+    height: 1200px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
+}
+
+.episodios h1 {
+    font-size: var(--title-font-size-mobile);
+    color: var(--bd-white);
+    top: 470px;
+    left: 685px;
+    z-index: 1;
+    position: absolute;
+}
+
+.episodios-img-mobile {
+    position: absolute;
+    top: 570px;
+    left: 685px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+}
+
+.episodios-img-mobile img {
+    margin: 10px 0px;
 }
