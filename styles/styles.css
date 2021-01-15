@@ -23,8 +23,6 @@ body {
 
 main {
     margin: auto;
-    width: 320px;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 
 header {
@@ -93,6 +91,10 @@ h1, h2 {
     text-decoration: line-through;
 }
 
+nav {
+    display: none;
+}
+
 p {
     margin: 15px 0px;
     font-family: var(--font-paragraph);
@@ -122,7 +124,7 @@ button:hover {
     width: 320px;
     height: 1200px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
 }
 
 .episodios h2 {
@@ -145,7 +147,7 @@ button:hover {
     padding: 10px;
 }
 
-.episodios-img-mobile img {
+.episodios-img-mobile-item {
     margin: 10px 0px;
 }
 
@@ -164,7 +166,7 @@ button:hover {
 
 .ultimas-novedades-cta-polygon {
     height: 341px;
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
 }
 
@@ -212,4 +214,180 @@ button:hover {
 
 .footer .social-media-logo {
     width: 20px;
+}
+
+@media screen and (min-width: 320px) {
+    main {
+        margin: auto;
+        width: 1440px;
+    }
+
+    header {
+        padding: 40px 50px; 
+    }
+
+    nav {
+        display: block;
+        font-family: var(--font-paragraph);
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    li {
+        margin: 0px 30px;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    h1 {
+        margin: 70px 210px 0px;
+        font-size: var(--title-font-size-desktop);
+    }
+
+    p {
+        font-size: var(--p-font-size-desktop);
+    }
+
+    .cta p {
+        margin: 20px 220px 0px;
+        padding: 0px 0px 50px;
+    }
+
+    .cta button {
+        text-align: left;
+        margin: 20px 220px 0px;
+        float: left;
+        z-index: 1;
+    }
+
+    .polygon {
+        margin: 100px 0px;
+        width: 100%;
+        height: 1100px;
+    }
+
+    .episodios {
+        width: 900px;
+    }
+
+    .episodios h2 {
+        margin: 220px 0px;
+        font-size: var(--title-font-size-desktop);
+    }
+
+    .episodios-img-mobile {
+        display: none;
+    }
+
+    .episodios-img-desktop {
+        position: absolute;
+        top: 750px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex: wrap;
+        margin: 100px 230px;
+        width: 1000px;
+    }
+
+    .episodios-img-desktop-group {
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        left: 55px;
+    }
+
+    .episodios-img-desktop-item {
+        margin: 20px;
+        width: 584px;
+    }
+
+    .de-donde-venimos {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .de-donde-venimos .de-donde-venimos-img-celular {
+        position: absolute;
+        top: 1450px;
+        margin: 0px 0px 0px 200px;
+    }
+
+    .de-donde-venimos .de-donde-venimos-texto {
+        position: absolute;
+        top: 1600px;
+        width: 464px;
+        margin: 0px 0px 0px 600px;
+    }
+
+    .invitadas-estelares h2 {
+        margin: 300px 200px 20px;
+    }
+
+    .invitadas-estelares-group-img-item {
+        display: flex;
+        width: 100%;
+    }
+
+    .invitadas-estelares-img {
+        width: 480px;
+    }
+
+    .invitadas-estelares-group-img {
+        width: 100%;
+    }
+
+    .nuestros-temas h2 {
+        margin: 30px 200px 0px;
+    }
+
+    .nuestros-temas-icons {
+        display: flex;
+        flex-direction: row;
+        margin: 20px 150px;
+    }
+
+    .nuestros-temas-child {
+        margin: 30px;
+    }
+
+    .ultimas-novedades-cta-polygon {
+        height: 518px;
+    }
+
+    .ultimas-novedades-title {
+        display: none;
+    }
+
+    .ultimas-novedades-title-desktop {
+        position: absolute;
+        top: 3500px;
+        left: 800px;
+        font-size: 48px;
+        color: var(--bd-white);
+    }
+
+    .ultimas-novedades-button {
+        top: 3600px;
+        left: 1000px;
+    }
+
+    .footer {
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .social-media-logo {
+        margin: 0px 20px;
+    }
 }
