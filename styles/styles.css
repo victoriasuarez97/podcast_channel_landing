@@ -8,7 +8,8 @@
     --font-title: 'IBM Plex Sans', sans-serif;
     --font-paragraph: 'IBM Plex Mono', monospace;
     --text-color: #060A24;
-    --color-button: #00F3BB;
+    --text-active: #808080;
+    --bd-green: #00F3BB;
     --bd-blue: #0000FE;
     --bd-white: #ffffff;
     --title-font-size-mobile: 36px;
@@ -106,7 +107,7 @@ p {
 
 button {
     margin: 20px 0px;
-    background-color: var(--color-button);
+    background-color: var(--bd-green);
     padding: 15px 100px;
     font-size: var(--p-font-size-desktop);
     font-family: var(--font-paragraph);
@@ -131,7 +132,7 @@ button:hover {
     font-size: var(--title-font-size-mobile);
     color: var(--bd-white);
     top: 470px;
-    left: 685px;
+    left: 330px;
     z-index: 1;
     position: absolute;
 }
@@ -226,6 +227,10 @@ button:hover {
         padding: 40px 50px; 
     }
 
+    #logo {
+        width: 36px;
+    }
+
     nav {
         display: block;
         font-family: var(--font-paragraph);
@@ -241,6 +246,16 @@ button:hover {
     li {
         margin: 0px 30px;
         cursor: pointer;
+    }
+
+    li:hover {
+        text-decoration: line-through;
+        color: var(--bd-green);
+    }
+
+    li:active {
+        text-decoration: line-through;
+        color: var(--text-active);
     }
 
     .mobile-menu {
@@ -370,21 +385,21 @@ button:hover {
     .ultimas-novedades-title-desktop {
         position: absolute;
         top: 3500px;
-        left: 800px;
+        left: 450px;
         font-size: 48px;
         color: var(--bd-white);
     }
 
     .ultimas-novedades-button {
         top: 3600px;
-        left: 1000px;
+        left: 650px;
     }
 
     .footer {
-        margin: 20px 0px;
+        margin: 20px 50px;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .social-media-logo {
