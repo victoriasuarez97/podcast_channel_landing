@@ -42,10 +42,6 @@ nav {
     display: none;
 }
 
-#menu {
-    width: 18px;
-}
-
 .nav-button {
     display: flex;
     justify-content: center;
@@ -53,14 +49,6 @@ nav {
     cursor: pointer;
     user-select: none;
     margin: 0 10px;
-}
-
-#nav-toggle {
-    display: none;
-}
-
-#nav-toggle:checked + .menu-list-mobile {
-    display: block;
 }
 
 .menu-list-mobile {
@@ -74,13 +62,66 @@ nav {
     margin: 0px;
     position: absolute;
     top: 50px;
-    left: 685px;
+    z-index: 1;
 }
 
 .menu-list-mobile-item {
     padding: 15px 0px;
     cursor: pointer;
 }
+
+.container-burger {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .linea {
+    height: 10%;
+    width: 75%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .linea-top {
+    top: 25%;
+  }
+
+  .linea-low {
+    transform: translate(-50%, -50%);
+    top: 75%;
+  }
+
+  .custom-checkbox:checked + .label-burger .container-burger .linea-low {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background-color: red;
+  }
+
+  .custom-checkbox:checked + .label-burger .container-burger .linea-med, .menu-list-mobile {
+    opacity: 0;
+  }
+
+  .custom-checkbox:checked + .label-burger .container-burger .linea-top, .menu-list-mobile {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: red;
+  }
+
+  .custom-checkbox:checked + .menu-list-mobile {
+    display: block;
+  }
+
+  input {
+    display: none;
+  }
 
 h1, h2 {
     padding: 20px 15px;
@@ -232,6 +273,10 @@ button:hover {
 
     header #logo {
         width: 36px;
+    }
+
+    .burger-menu {
+        display: none;
     }
 
     nav {
