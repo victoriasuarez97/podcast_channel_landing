@@ -20,23 +20,23 @@
             <nav>
                 <div class="desktop-menu">
                     <ul>
-                        <li>EPISODIOS</li>
-                        <li>NOSOTROS</li>
-                        <li>ENTREVISTAS</li>
-                        <li>TÓPICOS</li>
+                        <li><a href="#episodios">EPISODIOS</a></li>
+                        <li><a href="#nosotros">NOSOTROS</a></li>
+                        <li><a href="#entrevistas">ENTREVISTAS</a></li>
+                        <li><a href="#topicos">TÓPICOS</a></li>
                     </ul>
                 </div>
             </nav>
-            <div class="burger-menu">
-                <input id="burger" type="checkbox" class="custom-checkbox" />
-                <label for="burger" class="label-burger">
-                    <div class="container-burger">
-                        <div class="linea linea-top"></div>
-                        <div class="linea linea-med"></div>
-                        <div class="linea linea-low"></div>
-                    </div>
-            </div>
             <div class="mobile-menu">
+                <label for="navi-toggle" class="navigation-button">
+                    <div class="burger">
+                        <img src="./images/icons/menu.svg" class="menu-icons" alt="burger menu" />
+                    </div>
+                    <div class="close">
+                        <img src="./images/icons/close.svg" class="menu-icons" alt="close">
+                    </div>
+                </label>
+                <input type="checkbox" id="navi-toggle" class="navigation-checkbox" />
                 <div class="menu-list-mobile">
                     <div class="menu-list-mobile-item">
                         EPISODIOS
@@ -69,7 +69,7 @@
         </div>
         <div class="polygon">
         </div>
-        <div class="episodios">
+        <div class="episodios" id="episodios">
             <h2 class="episodios-title">Episodios</h2>
             <div class="episodios-img-desktop">
                 <div class="episodios-img-desktop-group">
@@ -90,7 +90,7 @@
                 </div>
             </div>
         </div>
-        <div class="de-donde-venimos">
+        <div class="de-donde-venimos" id="nosotros">
             <div class="de-donde-venimos-img-celular">
                 <img src="./images/phone.png" alt="phone" id="img-celular">
             </div>
@@ -104,7 +104,7 @@
                     there is no hint that help will come from elsewhere to save us from ourselves</p>
             </div>
         </div>
-        <div class="invitadas-estelares">
+        <div class="invitadas-estelares" id="entrevistas">
             <h2>Invitadas/os estelares</h2>
             <div class="invitadas-estelares-group-img">
                 <div class="invitadas-estelares-group-img-item">
@@ -121,7 +121,7 @@
                 </div>
             </div>
         </div>
-        <div class="nuestros-temas">
+        <div class="nuestros-temas" id="topicos">
             <h2>Algunos de nuestros temas</h2>
             <div class="nuestros-temas-icons">
                 <div class="nuestros-temas-child">
