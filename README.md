@@ -1,6 +1,6 @@
-# podcast_channel_landing
+# Podcast Channel 🎙️
 
-Final project of HTML and CSS block from Acamica's Front End Development course.
+Final project of HTML and CSS from Acamica's Front End Development course.
 
 Credits:
 
