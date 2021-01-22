@@ -95,7 +95,7 @@ header {
 .menu-list-mobile {
     display: none;
     top: 70px;
-    left: -10px;
+    left: 0px;
     position: absolute;
 }
   
