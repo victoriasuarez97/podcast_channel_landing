@@ -1,6 +1,6 @@
 # Podcast Channel 🎙️
 
-Final project of HTML and CSS from Acamica's Front End Development course.
+Final project of HTML and CSS from Acamica's Front End Development course. The goal was to build a landing page for a podcast channel using HTML and CSS, no libraries allowed.
 
 Credits:
 
