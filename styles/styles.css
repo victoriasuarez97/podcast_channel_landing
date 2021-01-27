@@ -345,10 +345,6 @@ button:hover {
         clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
     }
 
-    .episodios {
-        width: 900px;
-    }
-
     .episodios h2 {
         margin: 220px 0px;
         left: 200px;
@@ -399,6 +395,10 @@ button:hover {
         margin: 0px 0px 0px 600px;
     }
 
+    .de-donde-venimos .de-donde-venimos-texto > h2 {
+        margin: 0px;
+    }
+
     .invitadas-estelares h2 {
         margin: 400px 200px 20px;
     }
@@ -436,7 +436,7 @@ button:hover {
 
      .ultimas-novedades-cta h2 {
         position: absolute;
-        top: 3500px;
+        top: 3400px;
         left: 300px;
         z-index: 1;
         font-size: 48px;
@@ -444,7 +444,7 @@ button:hover {
     }
 
     .ultimas-novedades-cta .ultimas-novedades-button {
-        top: 3600px;
+        top: 3750px;
         left: 500px;
     }
 
