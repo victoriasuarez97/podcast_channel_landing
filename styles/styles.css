@@ -84,11 +84,10 @@ header {
 .mobile-menu .navigation-button .menu-icons {
     width: 20px;
 }
-
 #navi-toggle {
     display: none;
 }
-  
+    
 .menu-list-mobile {
     display: none;
     top: 70px;
@@ -336,7 +335,7 @@ button:hover {
     }
 
     .cta h1 > #dot-decoration {
-        color: #0000FE;
+        color: var(--bd-blue);
     }
 
     .polygon {
