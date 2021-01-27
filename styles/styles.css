@@ -19,6 +19,7 @@
 }
 
 body {
+    margin: auto;
     text-align: center;
 }
 
@@ -60,7 +61,7 @@ header {
     margin: 0px 10px;
 }
 
-.menu-list-mobile-item {
+.menu-list-mobile .menu-list-mobile-item {
     background-color: var(--bd-blue);
     color: var(--bd-white);
     font-family: var(--font-paragraph);
@@ -80,12 +81,8 @@ header {
     color: var(--bd-green);
 }
   
-.menu-icons {
+.mobile-menu .navigation-button .menu-icons {
     width: 20px;
-}
-
-.close {
-    display: none;
 }
 
 #navi-toggle {
@@ -165,7 +162,7 @@ button:hover {
     clip-path: polygon(0 5%, 100% 0, 100% 90%, 0% 100%);
 }
 
-.episodios h2 {
+.episodios > h2 {
     font-size: var(--title-font-size-mobile);
     color: var(--bd-white);
     top: 470px;
@@ -183,7 +180,7 @@ button:hover {
     height: 800px;
 }
 
-.episodios .episodios-img-desktop-item {
+.episodios .episodios-img-desktop .episodios-img-desktop-group .episodios-img-desktop-item {
     width: 298px;
 }
 
@@ -204,7 +201,7 @@ button:hover {
     padding: 20px;
 }
 
-.nuestros-temas .nuestros-temas-icons .nuestros-temas-child h4 {
+.nuestros-temas .nuestros-temas-icons .nuestros-temas-child > h4 {
     font-size: 24px;
     font-family: var(--font-title);
 }
@@ -241,7 +238,7 @@ button:hover {
     font-family: var(--font-paragraph);
 }
 
-.footer .footer-title {
+.footer .footer-text > h3 {
     font-size: 14px;
 }
 
@@ -316,9 +313,19 @@ button:hover {
         font-size: var(--p-font-size-desktop);
     }
 
-    .cta p {
+    .cta .cta-text-mobile {
+        display: none;
+    }
+
+    .cta .cta-text-desktop {
+        width: 900px;
         margin: 20px 220px 0px;
         padding: 0px 0px 50px;
+        text-align: left;
+    }
+
+    .cta .cta-text-desktop::after {
+        content: "El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días."
     }
 
     .cta button {
@@ -326,6 +333,10 @@ button:hover {
         margin: 20px 220px 0px;
         float: left;
         z-index: 1;
+    }
+
+    .cta h1 > #dot-decoration {
+        color: #0000FE;
     }
 
     .polygon {
@@ -359,14 +370,14 @@ button:hover {
         margin: 100px 20px;
     }
 
-    .episodios .episodios-img-desktop-group {
+    .episodios .episodios-img-desktop .episodios-img-desktop-group {
         margin: 20px;
         width: 600px;
         justify-content: center;
         align-items: center;
     }
 
-    .episodios .episodios-img-desktop-item {
+    .episodios .episodios-img-desktop .episodios-img-desktop-group .episodios-img-desktop-item {
         margin: 20px;
         width: 598px;
     }
